@@ -12,7 +12,6 @@ const TicketsCard = ({ ticket, setProgress, setSelectStatus }) => {
         toast("Ticket in Progress!");
 
     }
- 
 
     return (
 

@@ -18,6 +18,9 @@ function App() {
   const [resolve, setResolve] = useState(0)
 
   const [selectTask, setSelectStatus] = useState([]);
+  const [selectComplete, setSelectComplete] = useState([]);
+  const [completeTask, setCompleteTask] = useState([]);
+  console.log(completeTask)
 
 
   return (
@@ -50,16 +53,22 @@ function App() {
         {/* Task Status Card  */}
         <div className='w-1/4'>
           <TaskStatus
+            completeTask={completeTask}
+            setCompleteTask={setCompleteTask}
             selectTask={selectTask}
             progress={progress}
             setProgress={setProgress}
             resolve={resolve}
             setResolve={setResolve}
+            selectComplete={selectComplete}
+            setSelectComplete={setSelectComplete}
 
           ></TaskStatus>
-          
+
           {/* Resolve Task Card  */}
-          <ResolvedTask>
+          <ResolvedTask
+          completeTask={completeTask}
+          >
 
           </ResolvedTask>
         </div>

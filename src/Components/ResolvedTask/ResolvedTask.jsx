@@ -1,12 +1,17 @@
 import React from 'react';
+import ResolveTaskCard from './ResolveTaskCard';
 
-const ResolvedTask = () => {
+const ResolvedTask = ({completeTask}) => {
     return (
-        <div className='mt-8'>
-            <h1 className='font-semibold text-lg'>
-                Resolved Task
+        <div className='my-4'>
+            <h1 className='font-semibold text-lg my-4'>
+                Resolved Task {completeTask.length}
             </h1>
-            <p className='text-[#627382] text-sm'> No resolved tasks yet.</p>
+            {
+               completeTask.length===0? <p className='text-[#627382] text-sm'> No resolved tasks yet.</p>
+               :completeTask.map(data=><ResolveTaskCard data={data}></ResolveTaskCard>)
+            }
+            
         </div>
     );
 };
