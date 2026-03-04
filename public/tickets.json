@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Payment Failed but Charged",
+    "description": "Customer reports payment was deducted but order was not confirmed.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 2,
+    "title": "Unable to Login",
+    "description": "User cannot log into account despite using correct credentials.",
+    "customer": "Sarah Ahmed",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 3,
+    "title": "Password Reset Not Working",
+    "description": "Password reset email link is expired immediately after receiving.",
+    "customer": "Michael Smith",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-02-28"
+  },
+  {
+    "id": 4,
+    "title": "Order Delivered to Wrong Address",
+    "description": "Customer received notification of delivery but package was sent to incorrect address.",
+    "customer": "Nusrat Jahan",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2026-02-25"
+  },
+  {
+    "id": 5,
+    "title": "Refund Not Processed",
+    "description": "Refund requested 10 days ago but still not received.",
+    "customer": "David Lee",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-02-27"
+  },
+  {
+    "id": 6,
+    "title": "App Crashes on Checkout",
+    "description": "Mobile app crashes whenever user attempts to complete checkout.",
+    "customer": "Fatima Khan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 7,
+    "title": "Profile Update Error",
+    "description": "User unable to update profile information due to server error.",
+    "customer": "James Wilson",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-02-20"
+  },
+  {
+    "id": 8,
+    "title": "Discount Code Invalid",
+    "description": "Promo code shows invalid even though campaign is active.",
+    "customer": "Ayesha Rahman",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 9,
+    "title": "Delayed Shipping",
+    "description": "Order shipment delayed beyond estimated delivery date.",
+    "customer": "Robert Brown",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2026-02-26"
+  },
+  {
+    "id": 10,
+    "title": "Account Suspended Unexpectedly",
+    "description": "Customer account was suspended without prior notice.",
+    "customer": "Mehedi Hasan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 11,
+    "title": "Duplicate Order Placed",
+    "description": "System placed duplicate order after single checkout attempt.",
+    "customer": "Emily Clark",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-02-22"
+  },
+  {
+    "id": 12,
+    "title": "Subscription Cancellation Issue",
+    "description": "User unable to cancel subscription from account settings.",
+    "customer": "Tanvir Hossain",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-02-24"
+  },
+  {
+    "id": 13,
+    "title": "Invoice Download Error",
+    "description": "Invoice PDF fails to download after clicking download button.",
+    "customer": "Olivia Martinez",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 14,
+    "title": "Wrong Product Received",
+    "description": "Customer received a different product than what was ordered.",
+    "customer": "Rafiqul Islam",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2026-02-23"
+  },
+  {
+    "id": 15,
+    "title": "Live Chat Not Responding",
+    "description": "Live support chat window not loading on website.",
+    "customer": "Sophia Taylor",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  }
+]
