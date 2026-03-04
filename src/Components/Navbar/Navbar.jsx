@@ -35,7 +35,7 @@ const Nav = () => {
                 </div>
                 <div className='mx-8'>
                     <button className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white p-2 md:px-6 md:py-4 rounded-lg">
-                        <i class="fa-solid fa-plus"></i>
+                        <i className="fa-solid fa-plus"></i>
                         New Ticket </button>
                 </div>
             </div>

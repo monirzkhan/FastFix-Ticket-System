@@ -1,7 +1,7 @@
 import React from 'react';
 import bgImage from '../../assets/vector1.png'
 
-const Banner = () => {
+const Banner = ({ progress}) => {
     return (
         <div className='md:flex justify-center gap-8 md:my-8 my-4 mx-4'>
             {/* In-progress  */}
@@ -18,7 +18,7 @@ const Banner = () => {
 
                     <div className="card-body text-center  py-4">
                         <p className="font-bold text-xl">In-Progress</p>
-                        <h1 className='font-bold text-5xl'>0</h1>
+                        <h1 className='font-bold text-5xl'>{progress}</h1>
 
 
 
