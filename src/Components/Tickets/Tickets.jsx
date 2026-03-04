@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import TicketsCard from '../TicketsCard/TicketsCard';
 
-const Tickets = ({ ticketsPromise, progress, setProgress, selectTask, setSelectTask }) => {
+const Tickets = ({ ticketsPromise, progress, setProgress, selectTask, setSelectTask,  }) => {
     const tickets = use(ticketsPromise);
 
     return (
@@ -12,6 +12,7 @@ const Tickets = ({ ticketsPromise, progress, setProgress, selectTask, setSelectT
             <div className='grid md:grid-cols-2 grid-cols-1 gap-8'>
                 {
                     tickets.map(ticket => <TicketsCard
+                        
                         selectTask={selectTask}
                         setSelectTask={setSelectTask}
                         progress={progress}

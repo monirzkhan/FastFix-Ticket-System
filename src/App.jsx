@@ -21,11 +21,11 @@ function App() {
   const [selectTask, setSelectTask] = useState([]);
   const [selectComplete, setSelectComplete] = useState([]);
   const [completeTask, setCompleteTask] = useState([]);
-  
-  const removeTaskCard=(completeData)=>{
-    const filteredData=selectTask.filter(data=>data.id!==completeData.id);
+
+  const removeTaskCard = (completeData) => {
+    const filteredData = selectTask.filter(data => data.id !== completeData.id);
     setSelectTask(filteredData);
-    
+
   }
 
 
@@ -47,6 +47,7 @@ function App() {
         <div className='w-3/5'>
           <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
             <Tickets
+              
               selectTask={selectTask}
               setSelectTask={setSelectTask}
               progress={progress}
@@ -59,7 +60,7 @@ function App() {
         {/* Task Status Card  */}
         <div className='w-1/4'>
           <TaskStatus
-          removeTaskCard={removeTaskCard}
+            removeTaskCard={removeTaskCard}
             completeTask={completeTask}
             setCompleteTask={setCompleteTask}
             selectTask={selectTask}
@@ -74,7 +75,7 @@ function App() {
 
           {/* Resolve Task Card  */}
           <ResolvedTask
-          completeTask={completeTask}
+            completeTask={completeTask}
           >
 
           </ResolvedTask>
