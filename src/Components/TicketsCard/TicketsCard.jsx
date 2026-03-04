@@ -1,5 +1,6 @@
+import { toast } from "react-toastify";
 
-import { ToastContainer, toast } from 'react-toastify';
+
 
 const TicketsCard = ({ ticket, setProgress, setSelectStatus }) => {
 
@@ -16,7 +17,7 @@ const TicketsCard = ({ ticket, setProgress, setSelectStatus }) => {
     return (
 
         <div>
-            <div onClick={() => {
+            <div disabled onClick={() => {
                 handleProgressCard(ticket);
                
 
@@ -35,7 +36,7 @@ const TicketsCard = ({ ticket, setProgress, setSelectStatus }) => {
                     <div className="flex justify-between items-center my-4 ">
                         <div className='flex justify-between items-center gap-4'>
                             <span className='text-[#627382]'>#000{id}</span>
-                            <span>{priority} Priority</span>
+                            <span className={`${priority === "High" ? 'text-red-500' : 'text-yellow-400'}`}>{priority} Priority</span>
                         </div>
                         <div className='flex justify-between items-center gap-6 text-[#627382]'>
                             <p >{customer}</p>
@@ -44,7 +45,7 @@ const TicketsCard = ({ ticket, setProgress, setSelectStatus }) => {
                     </div>
                 </div>
             </div>
-            <ToastContainer />
+            
         </div>
     );
 };

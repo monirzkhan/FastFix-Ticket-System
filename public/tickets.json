@@ -32,7 +32,7 @@
     "description": "Customer received notification of delivery but package was sent to incorrect address.",
     "customer": "Nusrat Jahan",
     "priority": "High",
-    "status": "Resolved",
+    "status": "In Progress",
     "createdAt": "2026-02-25"
   },
   {
@@ -59,7 +59,7 @@
     "description": "User unable to update profile information due to server error.",
     "customer": "James Wilson",
     "priority": "Low",
-    "status": "Resolved",
+    "status": "In Progress",
     "createdAt": "2026-02-20"
   },
   {
@@ -95,7 +95,7 @@
     "description": "System placed duplicate order after single checkout attempt.",
     "customer": "Emily Clark",
     "priority": "Medium",
-    "status": "Resolved",
+    "status": "In Progress",
     "createdAt": "2026-02-22"
   },
   {
@@ -122,7 +122,7 @@
     "description": "Customer received a different product than what was ordered.",
     "customer": "Rafiqul Islam",
     "priority": "High",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2026-02-23"
   },
   {

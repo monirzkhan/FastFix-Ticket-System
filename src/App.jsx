@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar/Navbar'
 import ResolvedTask from './Components/ResolvedTask/ResolvedTask'
 import TaskStatus from './Components/TaskStatus/TaskStatus'
 import Tickets from './Components/Tickets/Tickets'
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -14,8 +15,10 @@ const ticketsPromise = fetch('/tickets.json')
   .then(res => (res.json()))
 function App() {
   const [progress, setProgress] = useState(0)
+  const [resolve, setResolve] = useState(0)
+
   const [selectTask, setSelectStatus] = useState([]);
-  
+
 
   return (
     <>
@@ -25,7 +28,7 @@ function App() {
 
       {/* Banner  */}
       <div className=' '>
-        <Banner progress={progress}></Banner>
+        <Banner progress={progress} resolve={resolve}></Banner>
       </div>
 
 
@@ -33,7 +36,7 @@ function App() {
       {/* Customers Tickets  */}
       <div className='md:flex justify-between md:px-32 py-4 bg-[#62738220] '>
         <div className='w-3/5'>
-          <Suspense fallback='Tickets Loading'>
+          <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
             <Tickets
               selectTask={selectTask}
               setSelectStatus={setSelectStatus}
@@ -44,16 +47,25 @@ function App() {
             </Tickets>
           </Suspense>
         </div>
+        {/* Task Status Card  */}
         <div className='w-1/4'>
           <TaskStatus
             selectTask={selectTask}
-            
+            progress={progress}
+            setProgress={setProgress}
+            resolve={resolve}
+            setResolve={setResolve}
+
           ></TaskStatus>
-          <ResolvedTask></ResolvedTask>
+          
+          {/* Resolve Task Card  */}
+          <ResolvedTask>
+
+          </ResolvedTask>
         </div>
       </div>
 
-
+      <ToastContainer></ToastContainer>
     </>
   )
 }
