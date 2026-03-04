@@ -13,14 +13,20 @@ import { ToastContainer } from 'react-toastify';
 
 const ticketsPromise = fetch('/tickets.json')
   .then(res => (res.json()))
+
 function App() {
   const [progress, setProgress] = useState(0)
   const [resolve, setResolve] = useState(0)
 
-  const [selectTask, setSelectStatus] = useState([]);
+  const [selectTask, setSelectTask] = useState([]);
   const [selectComplete, setSelectComplete] = useState([]);
   const [completeTask, setCompleteTask] = useState([]);
-  console.log(completeTask)
+  
+  const removeTaskCard=(completeData)=>{
+    const filteredData=selectTask.filter(data=>data.id!==completeData.id);
+    setSelectTask(filteredData);
+    
+  }
 
 
   return (
@@ -42,7 +48,7 @@ function App() {
           <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
             <Tickets
               selectTask={selectTask}
-              setSelectStatus={setSelectStatus}
+              setSelectTask={setSelectTask}
               progress={progress}
               setProgress={setProgress}
               ticketsPromise={ticketsPromise} >
@@ -53,6 +59,7 @@ function App() {
         {/* Task Status Card  */}
         <div className='w-1/4'>
           <TaskStatus
+          removeTaskCard={removeTaskCard}
             completeTask={completeTask}
             setCompleteTask={setCompleteTask}
             selectTask={selectTask}

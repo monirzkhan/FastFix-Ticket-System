@@ -9,7 +9,7 @@ const ResolvedTask = ({completeTask}) => {
             </h1>
             {
                completeTask.length===0? <p className='text-[#627382] text-sm'> No resolved tasks yet.</p>
-               :completeTask.map(data=><ResolveTaskCard data={data}></ResolveTaskCard>)
+               :completeTask.map(data=><ResolveTaskCard key={data.id} data={data}></ResolveTaskCard>)
             }
             
         </div>

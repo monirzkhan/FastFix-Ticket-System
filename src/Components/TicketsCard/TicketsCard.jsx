@@ -2,13 +2,13 @@ import { toast } from "react-toastify";
 
 
 
-const TicketsCard = ({ ticket, setProgress, setSelectStatus }) => {
+const TicketsCard = ({ ticket, setProgress, setSelectTask }) => {
 
     const { id, title, description, customer, priority, status, createdAt } = ticket;
 
     const handleProgressCard = (cardData) => {
         setProgress(prev => prev + 1);
-        setSelectStatus(prev => [...prev, cardData]);
+        setSelectTask(prev => [...prev, cardData]);
         toast("Ticket in Progress!");
 
     }

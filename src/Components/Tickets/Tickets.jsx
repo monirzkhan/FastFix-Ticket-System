@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import TicketsCard from '../TicketsCard/TicketsCard';
 
-const Tickets = ({ ticketsPromise, progress, setProgress, selectTask, setSelectStatus }) => {
+const Tickets = ({ ticketsPromise, progress, setProgress, selectTask, setSelectTask }) => {
     const tickets = use(ticketsPromise);
 
     return (
@@ -13,7 +13,7 @@ const Tickets = ({ ticketsPromise, progress, setProgress, selectTask, setSelectS
                 {
                     tickets.map(ticket => <TicketsCard
                         selectTask={selectTask}
-                        setSelectStatus={setSelectStatus}
+                        setSelectTask={setSelectTask}
                         progress={progress}
                         setProgress={setProgress}
                         key={ticket.id}

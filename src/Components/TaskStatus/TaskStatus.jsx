@@ -2,7 +2,8 @@
 import TaskStatusCard from './TaskStatusCard';
 
 const TaskStatus = ({ 
-    selectTask, progress, setProgress, resolve, setResolve, setSelectComplete, selectComplete,completeTask ,setCompleteTask
+    selectTask, progress, setProgress, resolve, setResolve, 
+    setSelectComplete, selectComplete,completeTask ,setCompleteTask,removeTaskCard
 }) => {
 
 
@@ -12,6 +13,7 @@ const TaskStatus = ({
             <div className='my-4'>
                 {
                     selectTask.length > 0 ? selectTask.map(card => <TaskStatusCard
+                    removeTaskCard={removeTaskCard}
                         completeTask={completeTask}
                         setCompleteTask={setCompleteTask}
                         progress={progress}
