@@ -5,7 +5,7 @@
     "description": "Customer reports payment was deducted but order was not confirmed.",
     "customer": "John Doe",
     "priority": "High",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2026-03-01"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Password reset email link is expired immediately after receiving.",
     "customer": "Michael Smith",
     "priority": "High",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2026-02-28"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Mobile app crashes whenever user attempts to complete checkout.",
     "customer": "Fatima Khan",
     "priority": "High",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2026-03-03"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Promo code shows invalid even though campaign is active.",
     "customer": "Ayesha Rahman",
     "priority": "Medium",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2026-03-01"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Customer account was suspended without prior notice.",
     "customer": "Mehedi Hasan",
     "priority": "High",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2026-03-04"
   },
   {
@@ -113,7 +113,7 @@
     "description": "Invoice PDF fails to download after clicking download button.",
     "customer": "Olivia Martinez",
     "priority": "Low",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2026-03-02"
   },
   {
@@ -122,7 +122,7 @@
     "description": "Customer received a different product than what was ordered.",
     "customer": "Rafiqul Islam",
     "priority": "High",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2026-02-23"
   },
   {
@@ -131,7 +131,7 @@
     "description": "Live support chat window not loading on website.",
     "customer": "Sophia Taylor",
     "priority": "Medium",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2026-03-03"
   }
 ]

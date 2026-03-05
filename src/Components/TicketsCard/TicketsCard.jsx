@@ -17,7 +17,6 @@ const TicketsCard = ({ ticket, setProgress, setSelectTask, selectTask, }) => {
 
         setProgress(prev => prev + 1);
         setSelectTask(prev => [...prev, cardData]);
-
         toast.success("Ticket in Progress!");
 
     }
@@ -36,9 +35,9 @@ const TicketsCard = ({ ticket, setProgress, setSelectTask, selectTask, }) => {
                         <div>
                             <h2 className="card-title">{title}</h2>
                         </div>
-                        <div className={`badge  rounded-full ${status === "Open" ? 'badge-success' : 'badge-warning'} `}>
+                        <div className={`badge  rounded-full ${status === "Open " ? 'badge-success' : 'badge-warning'} `}>
 
-                            <i className="fa-solid fa-circle"></i> {status}
+                            <i className="fa-solid fa-circle"></i> {isAlreadySelected? status: "Open"}
                         </div>
                     </div>
                     <p className='text-[#627382]'>{description}</p>

@@ -8,6 +8,7 @@ import ResolvedTask from './Components/ResolvedTask/ResolvedTask'
 import TaskStatus from './Components/TaskStatus/TaskStatus'
 import Tickets from './Components/Tickets/Tickets'
 import { ToastContainer } from 'react-toastify';
+import Footer from './Components/Footer/Footer'
 
 
 
@@ -81,6 +82,9 @@ function App() {
           </ResolvedTask>
         </div>
       </div>
+
+      {/* Footer  */}
+      <Footer></Footer>
 
       <ToastContainer></ToastContainer>
     </>
