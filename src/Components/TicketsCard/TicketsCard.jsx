@@ -42,11 +42,11 @@ const TicketsCard = ({ ticket, setProgress, setSelectTask, selectTask, }) => {
                     </div>
                     <p className='text-[#627382]'>{description}</p>
                     <div className="flex justify-between items-center my-4 ">
-                        <div className='flex justify-between items-center gap-4'>
+                        <div className='flex justify-between items-center gap-3'>
                             <span className='text-[#627382]'>#000{id}</span>
                             <span className={`${priority === "High" ? 'text-red-500' : 'text-yellow-400'}`}>{priority} Priority</span>
                         </div>
-                        <div className='flex justify-between items-center gap-6 text-[#627382]'>
+                        <div className='flex justify-between items-center gap-3 text-[#627382]'>
                             <p >{customer}</p>
                             <p><i className="fa-regular fa-calendar"></i> {createdAt}</p>
                         </div>
