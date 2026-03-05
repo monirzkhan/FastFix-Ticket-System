@@ -19,7 +19,7 @@ const Nav = () => {
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost md:text-2xl text-sm">FastFix-Ticket System</a>
+                <a className="btn btn-ghost md:text-2xl text-xl"> <i class="fa-solid fa-screwdriver-wrench"></i> FastFix</a>
             </div>
             
             <div className="navbar-end">
