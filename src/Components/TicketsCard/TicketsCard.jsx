@@ -35,9 +35,9 @@ const TicketsCard = ({ ticket, setProgress, setSelectTask, selectTask, }) => {
                         <div>
                             <h2 className="card-title">{title}</h2>
                         </div>
-                        <div className={`badge  rounded-full ${isAlreadySelected ? 'badge-warning' : 'badge-success'} `}>
+                        <div className={`badge  rounded-full ${isAlreadySelected ? 'badge-warning py-5 px-4' : 'badge-success'} `}>
 
-                            <i className="fa-solid fa-circle"></i> {isAlreadySelected ? 'In Progress' : 'Open'}
+                            <i className="fa-solid fa-circle"></i>  {isAlreadySelected ? 'InProgress' : 'Open'}
                         </div>
                     </div>
                     <p className='text-[#627382]'>{description}</p>

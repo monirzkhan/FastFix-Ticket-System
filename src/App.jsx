@@ -40,7 +40,6 @@ function App() {
 
   }
 
-
   return (
     <>
 
@@ -48,7 +47,7 @@ function App() {
       <Navbar></Navbar>
 
       {/* Banner  */}
-      <div className=' '>
+      <div>
         <Banner progress={progress} resolve={resolve}></Banner>
       </div>
 
