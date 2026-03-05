@@ -23,7 +23,7 @@ function App() {
       .then(res => res.json())
       .then(data => setTickets(data));
   }, []);
-  
+
   const [progress, setProgress] = useState(0)
   const [resolve, setResolve] = useState(0)
 

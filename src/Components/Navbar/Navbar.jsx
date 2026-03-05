@@ -21,17 +21,17 @@ const Nav = () => {
                 </div>
                 <a className="btn btn-ghost md:text-2xl text-xl"> <i class="fa-solid fa-screwdriver-wrench"></i> FastFix</a>
             </div>
-            
+
             <div className="navbar-end">
                 <div className='hidden lg:flex '>
                     <ul className="menu menu-horizontal px-1 text-xl">
-                    <li><a>Home</a></li>
-                    <li><a>FAQ</a></li>
-                    <li><a>Changelog</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Download</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
+                        <li><a>Home</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>Changelog</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Download</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
                 </div>
                 <div className='mx-8'>
                     <button className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white px-2  md:px-6 md:py-4 rounded-lg">
