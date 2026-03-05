@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className=" bg-neutral text-neutral-content md:px-20 p-10">
-          <div className='footer sm:footer-horizontal my-4 py-8 border-b-1 border-b-amber-50'>
+          <div className='footer sm:footer-horizontal my-4 py-8 border-b-1 border-b-gray-200'>
               <nav className='w-80 text-justify'>
                 <h6 className="footer-title text-2xl text-white">FastFix Ticket System</h6>
                <span>FastFix is a smart and efficient customer support ticketing system designed to streamline issue tracking, improve response time, and ensure seamless communication between customers and support teams. We help businesses resolve problems faster and deliver better service experiences.</span>
@@ -37,7 +37,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className='text-center my-8'>
-            <span>© 2025 FastFix — Ticket System. All rights reserved.</span>
+            <span>© 2026 FastFix — Ticket System. All rights reserved.</span>
           </div>
         </footer>
     );

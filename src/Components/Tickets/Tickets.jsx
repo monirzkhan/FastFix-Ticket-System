@@ -8,7 +8,7 @@ const Tickets = ({ tickets, progress, setProgress, selectTask, setSelectTask, })
             <h1 className='font-bold text-xl my-4'>
                 Customer Tickets: ({tickets.length})
             </h1>
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-8 '>
+            <div className='grid md:grid-cols-2 grid-cols-1 justify-items-center-safe gap-8 '>
                 {
                     tickets.length > 0 ?
                         tickets.map(ticket => <TicketsCard

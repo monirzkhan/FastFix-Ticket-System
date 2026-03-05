@@ -4,11 +4,11 @@ import { toast } from "react-toastify";
 
 const TicketsCard = ({ ticket, setProgress, setSelectTask, selectTask, }) => {
 
-    const { id, title, description, customer, priority, status, createdAt } = ticket;
+    const { id, title, description, customer, priority, createdAt } = ticket;
     const isAlreadySelected = selectTask.some(task => task.id === id);
 
     const handleProgressCard = (cardData) => {
-        
+
 
         if (isAlreadySelected) {
             toast.error("Ticket already in Progress!");
@@ -37,7 +37,7 @@ const TicketsCard = ({ ticket, setProgress, setSelectTask, selectTask, }) => {
                         </div>
                         <div className={`badge  rounded-full ${isAlreadySelected ? 'badge-warning' : 'badge-success'} `}>
 
-                            <i className="fa-solid fa-circle"></i> {isAlreadySelected? 'In Progress': 'Open'}
+                            <i className="fa-solid fa-circle"></i> {isAlreadySelected ? 'In Progress' : 'Open'}
                         </div>
                     </div>
                     <p className='text-[#627382]'>{description}</p>
