@@ -8,8 +8,8 @@ const TaskStatus = ({
 
 
     return (
-        <div>
-            <h1 className='font-bold text-lg my-4'>Task Status: {selectTask.length}</h1>
+        <div className='px-2'>
+            <h1 className='font-bold text-lg my-4'>Task Status: ({selectTask.length})</h1>
             <div className='my-4'>
                 {
                     selectTask.length > 0 ? selectTask.map(card => <TaskStatusCard

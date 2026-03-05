@@ -12,6 +12,7 @@ const TaskStatusCard = ({
         if (progress === 0) {
             return
         }
+       
         toast.success('Great !! Task Resolved.')
         setProgress(updateProgress);
         setResolve(updateResolve);
@@ -20,10 +21,10 @@ const TaskStatusCard = ({
         setCompleteTask([...completeTask, data]);
 
     }
-    
+
 
     return (
-        <div className="card w-96 bg-base-100 card-sm shadow-sm my-4">
+        <div className="card  w-full bg-base-100 card-sm shadow-sm my-4">
             <div className="card-body">
                 <h2 className="card-title">{card.title}</h2>
 

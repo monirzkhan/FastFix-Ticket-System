@@ -6,7 +6,7 @@ const Banner = ({ progress,resolve}) => {
         <div className='md:flex justify-center gap-8 md:my-8 my-4 mx-4'>
             {/* In-progress  */}
             <div>
-                <div className="md:my-0 my-4 relative overflow-hidden text-white rounded-2xl py-16 bg-linear-to-r from-[#632EE3]  to-[#9F62F2] md:w-160 w-120 shadow-sm">
+                <div className="md:my-0 my-4 relative overflow-hidden text-white rounded-2xl py-16 bg-linear-to-r from-[#632EE3]  to-[#9F62F2] md:w-160 w-90 shadow-sm">
 
                     <img
                         src={bgImage}
@@ -28,7 +28,7 @@ const Banner = ({ progress,resolve}) => {
             {/* Resolved  */}
             <div>
                 <div>
-                    <div className="relative overflow-hidden text-white rounded-2xl py-16 bg-linear-to-r from-[#54CF68]  to-[#00827A] md:w-160  w-120 shadow-sm">
+                    <div className="relative overflow-hidden text-white rounded-2xl py-16 bg-linear-to-r from-[#54CF68]  to-[#00827A] md:w-160  w-90 shadow-sm">
 
                         <img
                             src={bgImage}

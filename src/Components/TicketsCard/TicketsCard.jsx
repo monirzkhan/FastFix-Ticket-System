@@ -26,10 +26,9 @@ const TicketsCard = ({ ticket, setProgress, setSelectTask, selectTask, }) => {
         <div>
             <div onClick={() => {
                 handleProgressCard(ticket);
-                // !isAlreadySelected ? handleProgressCard (ticket): undefined;
 
 
-            }} className={`card w-120 bg-base-100 card-sm shadow-sm p-2 
+            }} className={`card md:w-120 w-90 bg-base-100 card-sm shadow-sm p-2
                 ${isAlreadySelected ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}>
                 <div className="card-body">
                     <div className='flex justify-between items-center'>

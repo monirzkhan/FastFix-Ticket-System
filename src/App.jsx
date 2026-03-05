@@ -23,6 +23,7 @@ function App() {
       .then(res => res.json())
       .then(data => setTickets(data));
   }, []);
+  
   const [progress, setProgress] = useState(0)
   const [resolve, setResolve] = useState(0)
 
@@ -54,8 +55,8 @@ function App() {
 
       {/* Tickets Body  */}
       {/* Customers Tickets  */}
-      <div className='md:flex justify-between md:px-32 py-4 bg-[#62738220] '>
-        <div className='w-3/5'>
+      <div className='md:flex justify-between md:px-32  py-4 bg-[#62738220] '>
+        <div className='md:w-3/5'>
           <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
             <Tickets
               tickets={tickets}
@@ -70,7 +71,7 @@ function App() {
           </Suspense>
         </div>
         {/* Task Status Card  */}
-        <div className='w-1/4'>
+        <div className='md:w-1/4'>
           <TaskStatus
             removeTaskCard={removeTaskCard}
             completeTask={completeTask}

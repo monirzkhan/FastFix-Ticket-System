@@ -19,7 +19,7 @@ const Nav = () => {
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost md:text-2xl text-lg">FastFix-Ticket System</a>
+                <a className="btn btn-ghost md:text-2xl text-sm">FastFix-Ticket System</a>
             </div>
             
             <div className="navbar-end">
@@ -34,7 +34,7 @@ const Nav = () => {
                 </ul>
                 </div>
                 <div className='mx-8'>
-                    <button className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white p-2 md:px-6 md:py-4 rounded-lg">
+                    <button className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white px-2  md:px-6 md:py-4 rounded-lg">
                         <i className="fa-solid fa-plus"></i>
                         New Ticket </button>
                 </div>
