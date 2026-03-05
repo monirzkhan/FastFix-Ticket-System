@@ -1,9 +1,8 @@
-import React, { use } from 'react';
+import React from 'react';
 import TicketsCard from '../TicketsCard/TicketsCard';
 
-const Tickets = ({ ticketsPromise, progress, setProgress, selectTask, setSelectTask,  }) => {
-    const tickets = use(ticketsPromise);
-
+const Tickets = ({tickets,  progress, setProgress, selectTask, setSelectTask,  }) => {
+    
     return (
         <div>
             <h1 className='font-bold text-xl my-4'>

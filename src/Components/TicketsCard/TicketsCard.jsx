@@ -26,6 +26,7 @@ const TicketsCard = ({ ticket, setProgress, setSelectTask, selectTask, }) => {
         <div>
             <div onClick={() => {
                 handleProgressCard(ticket);
+                // !isAlreadySelected ? handleProgressCard (ticket): undefined;
 
 
             }} className={`card w-120 bg-base-100 card-sm shadow-sm p-2 
@@ -35,9 +36,9 @@ const TicketsCard = ({ ticket, setProgress, setSelectTask, selectTask, }) => {
                         <div>
                             <h2 className="card-title">{title}</h2>
                         </div>
-                        <div className={`badge  rounded-full ${status === "Open " ? 'badge-success' : 'badge-warning'} `}>
+                        <div className={`badge  rounded-full ${isAlreadySelected ? 'badge-warning' : 'badge-success'} `}>
 
-                            <i className="fa-solid fa-circle"></i> {isAlreadySelected? status: "Open"}
+                            <i className="fa-solid fa-circle"></i> {isAlreadySelected? 'In Progress': 'Open'}
                         </div>
                     </div>
                     <p className='text-[#627382]'>{description}</p>

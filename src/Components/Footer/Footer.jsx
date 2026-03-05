@@ -30,10 +30,10 @@ const Footer = () => {
             </nav>
             <nav>
                 <h6 className="footer-title text-white text-xl">Social Links</h6>
-                <a className="link link-hover"><i class="fa-brands fa-x-twitter"></i> </a>
-                <a className="link link-hover"><i class="fa-brands fa-facebook"></i></a>
-                <a className="link link-hover"><i class="fa-brands fa-linkedin"></i></a>
-                <a className="link link-hover"><i class="fa-solid fa-envelope"></i></a>
+                <a className="link link-hover"><i class="fa-brands fa-x-twitter"></i> @FastFix — Ticket System </a>
+                <a className="link link-hover"><i class="fa-brands fa-facebook"></i> @FastFix — Ticket System</a>
+                <a className="link link-hover"><i class="fa-brands fa-linkedin"></i> @FastFix — Ticket System</a>
+                <a className="link link-hover"><i class="fa-solid fa-envelope"></i> support@fastfix.com</a>
             </nav>
           </div>
           <div className='text-center my-8'>

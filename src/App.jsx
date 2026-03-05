@@ -1,8 +1,7 @@
 
-import { Suspense, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
-
 import Navbar from './Components/Navbar/Navbar'
 import ResolvedTask from './Components/ResolvedTask/ResolvedTask'
 import TaskStatus from './Components/TaskStatus/TaskStatus'
@@ -12,10 +11,18 @@ import Footer from './Components/Footer/Footer'
 
 
 
-const ticketsPromise = fetch('/tickets.json')
-  .then(res => (res.json()))
+
+
+
 
 function App() {
+  const [tickets, setTickets] = useState([]);
+
+  useEffect(() => {
+    fetch('/tickets.json')
+      .then(res => res.json())
+      .then(data => setTickets(data));
+  }, []);
   const [progress, setProgress] = useState(0)
   const [resolve, setResolve] = useState(0)
 
@@ -26,6 +33,9 @@ function App() {
   const removeTaskCard = (completeData) => {
     const filteredData = selectTask.filter(data => data.id !== completeData.id);
     setSelectTask(filteredData);
+
+    const updatedTickets = tickets.filter(data => data.id !== completeData.id);
+    setTickets(updatedTickets);
 
   }
 
@@ -48,12 +58,13 @@ function App() {
         <div className='w-3/5'>
           <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
             <Tickets
-              
+              tickets={tickets}
+              setTickets={setTickets}
               selectTask={selectTask}
               setSelectTask={setSelectTask}
               progress={progress}
               setProgress={setProgress}
-              ticketsPromise={ticketsPromise} >
+            >
 
             </Tickets>
           </Suspense>
